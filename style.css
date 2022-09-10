@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Crimson+Text:ital@1&family=Source+Serif+Pro:ital,wght@1,300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel&family=Crimson+Text:ital@1&family=Source+Serif+Pro:ital,wght@1,300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel&family=Crimson+Text:ital@1&family=Indie+Flower&family=Source+Serif+Pro:ital,wght@1,300&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cinzel&family=Crimson+Text:ital@1&family=DynaPuff:wdth@96.1;100&family=Indie+Flower&family=Satisfy&family=Source+Serif+Pro:ital,wght@1,300&family=Square+Peg&display=swap');
+body {
+    background-color: rgb(72, 245, 245);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Crimson Text' , sans-serif;
+}
+
+nav ul{
+    display: flex; /* Items will be alligned horizontally*/
+    align-items: center;
+    list-style-type: none;
+    height: 55px; /*height of the black top bar*/
+    background-color: black;
+    color: white; /* color of the text inside the black bar*/
+}
+
+nav ul li{
+    padding: 0 12px;
+
+}
+/* brand class*/
+.brand img{
+    width: 46px; /* spotify logo size*/
+    height:46px;
+    padding: 0 8px;
+}
+ 
+.brand{
+    display:flex; /*brand name i.e., Spotify*/
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh; /* 72 vh means 72% of height i.e., the aqua color part*/
+    background-color: black;
+    color: white;
+    font-family: 'DynaPuff' , sans-serif ;
+    display: flex;
+    margin: 20px auto;/* margin of the middle box from left side*/
+    width: 70%;/* width of the middle box*/
+    border-radius: 12px;/* makes the edges of the middle box curved*/
+    padding: 34px;
+    background-image: url('bg2.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0px; /* so that there is no space below the black bottom bar*/
+    height:80px;
+    background-color: black;
+    color:white;
+    display: flex;
+    justify-content: center; /* progress bar is in middle of from left side of the black bottom*/
+    align-items: center; /* displays the progressBar in the middle of the bottom black bar*/
+    flex-direction: column;/* situates the play buttons in the middle of black bottom bar */
+    
+}
+
+.icons{
+    margin-top: 14px;/* distance of the progress bar from top edge of the black bottom bar*/
+    
+}
+.icons i{
+    cursor: pointer;
+}
+/* Progress bar is the song progress bar*/
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+
+}
+
+.songItemContainer
+{
+    margin-top: 34px;
+
+}
+
+.songItem{
+    height:50px;
+    display:flex;
+    background-color: white;
+    color: black;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.songItem img{
+    width: 44px;
+    margin: 0 23px; /* 0 from top and bottom and 23 from left and right*/
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+    
+}
+
+.timestamp i{
+    cursor: pointer;
+    
+}
+
+.songInfo
+{
+    position: absolute; /*shift the songInfo part to th left*/
+    left: 10vw;
+    font-family:'Indie Flower' , sans-serif;
+
+}
